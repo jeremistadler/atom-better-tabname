@@ -1,6 +1,6 @@
 {
   "name": "foldername-tabs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Rename tabs titles with previous directory",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,10 @@
     "rename",
     "title"
   ],
-  "authors": ["JP Richardson", "Jeremi Stadler"],
+  "authors": [
+    "JP Richardson",
+    "Jeremi Stadler"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jeremistadler/atom-foldername-tabs/issues"
