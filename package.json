@@ -1,6 +1,6 @@
 {
   "name": "atom-better-tabname",
-  "version": "1.0.0",
+  "version": "1.3.7",
   "description": "Rename tabs titles with previous directory",
   "main": "index.js",
   "scripts": {
