@@ -15,6 +15,8 @@ To be clear, this isn't only for Node.js developers. This is for those who like
 Sublime Text editor's tab title convention.
 
 
+This fork show the foldername for files starting with index
+
 Install
 -------
 

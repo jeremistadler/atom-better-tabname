@@ -1,7 +1,7 @@
 {
-  "name": "rename-tabs",
-  "version": "0.2.0",
-  "description": "Rename tabs titles with previous directory. Consistent with Sublime Text Editor behavior.",
+  "name": "foldername-tabs",
+  "version": "0.3.0",
+  "description": "Rename tabs titles with previous directory",
   "main": "index.js",
   "scripts": {
     "publish": "apm publish --tag TAGNAME",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jprichardson/atom-rename-tabs"
+    "url": "https://github.com/jeremistadler/atom-foldername-tabs"
   },
   "keywords": [
     "atom",
@@ -17,10 +17,10 @@
     "rename",
     "title"
   ],
-  "author": "JP Richardson",
+  "authors": ["JP Richardson", "Jeremi Stadler"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jprichardson/atom-rename-tabs/issues"
+    "url": "https://github.com/jeremistadler/atom-foldername-tabs/issues"
   },
-  "homepage": "https://github.com/jprichardson/atom-rename-tabs"
+  "homepage": "https://github.com/jeremistadler/atom-foldername-tabs"
 }

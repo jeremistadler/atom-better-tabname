@@ -42,7 +42,7 @@ function renameTabs () {
     }
   })
   // filter out temps
-  .filter(function (tab) { return tab })
+  .filter(tab => tab)
 
   tabs.forEach(function (tab) {
     tab.uniqueName = names[tab.name] === 1
@@ -52,9 +52,8 @@ function renameTabs () {
   })
 }
 
-// todo: allow user to configure this
 function renameTab (tab, tabs) {
-  if (tab.uniqueName) {
+  if (tab.uniqueName && tab.name.indexOf('index') !== 0) {
     tab.element.innerText = tab.name
   } else {
     var dir = path.dirname(tab.path)

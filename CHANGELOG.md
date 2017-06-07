@@ -1,3 +1,7 @@
+0.3.0 / 2017-06-06
+------------------
+- Show foldername if the tab is named index
+
 0.2.0 / 2016-09-22
 ------------------
 - rename tabs on moving
