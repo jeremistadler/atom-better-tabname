@@ -1,28 +1,19 @@
-Atom Rename Tabs
+Atom Better Tabnames
 ================
 
-Renames your Atom Text Editor tab titles to more useful names if there are many
-instances of the same file name open. This is consistent with Sublime Text editor tab
-title behavior.
+Renames your Atom Text Editor tab titles to more useful names.
 
-Atom's tab naming isn't very helpful if there are multiple files with the same
-name open. This package is useful if you write Node.js app with a lot of files
-named `index.js`. Atom would title the tabs `index.js - /my/project...`. That's
-not very helpful. Assuming you have two files: `/my/project/foo/index.js` and
-`/my/project/bar/index.js` the tabs to `index.js - foo` and `index.js - bar` respectively.
+Uses the foldername if:
 
-To be clear, this isn't only for Node.js developers. This is for those who like
-Sublime Text editor's tab title convention.
-
-
-This fork show the foldername for files starting with index
+- There are more than one instance of the same file name open.
+- The filename starts with `index`
 
 Install
 -------
 
-    apm install foldername-tabs
+    apm install atom-better-tabname
 
-or go to `Settings` → `Install` → `Search` and search for `foldername-tabs`.
+or go to `Settings` → `Install` → `Search` and search for `better-tabname`.
 
 
 Usage
