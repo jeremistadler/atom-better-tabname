@@ -53,13 +53,19 @@ function renameTabs () {
 }
 
 function renameTab (tab, tabs) {
-  if (tab.uniqueName && tab.name.indexOf('index') !== 0) {
+  const startsWithIndex = tab.name.indexOf('index.') === 0;
+
+  if (tab.uniqueName && !startsWithIndex) {
     tab.element.innerText = tab.name
   } else {
     var dir = path.dirname(tab.path)
     var dirs = dir.split(path.sep)
     var prevDir = dirs[dirs.length - 1]
-    tab.element.innerText = tab.name + ' - ' + prevDir
+
+    if (startsWithIndex)
+      tab.element.innerText = prevDir;
+    else
+      tab.element.innerText = prevDir + ' - ' + tab.name;
   }
 }
 
