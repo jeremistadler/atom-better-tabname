@@ -20,9 +20,9 @@ This fork show the foldername for files starting with index
 Install
 -------
 
-    apm install rename-tabs
+    apm install foldername-tabs
 
-or go to `Settings` → `Install` → `Search` and search for `rename-tabs`.
+or go to `Settings` → `Install` → `Search` and search for `foldername-tabs`.
 
 
 Usage
