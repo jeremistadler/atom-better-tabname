@@ -53,20 +53,22 @@ function renameTabs () {
 }
 
 function renameTab (tab, tabs) {
-  const startsWithIndex = tab.name.indexOf('index.') === 0;
+  // if (tab.uniqueName){
+  //   tab.element.innerText = tab.name
+  //   return
+  // }
 
-  if (tab.uniqueName && !startsWithIndex) {
-    tab.element.innerText = tab.name
-  } else {
-    var dir = path.dirname(tab.path)
-    var dirs = dir.split(path.sep)
-    var prevDir = dirs[dirs.length - 1]
+  var dir = path.dirname(tab.path)
+  var dirs = dir.split(path.sep)
+  var prevDir = dirs[dirs.length - 1]
 
-    if (startsWithIndex)
-      tab.element.innerText = prevDir;
-    else
-      tab.element.innerText = prevDir + ' - ' + tab.name;
-  }
+  const parentName = prevDir.replace(/View$/, '')
+  const itemName = tab.name.replace('.js', '')
+
+  if (tab.name.indexOf('index.') === 0)
+    tab.element.innerText = parentName;
+  else
+    tab.element.innerText = parentName + ' - ' + itemName;
 }
 
 module.exports = {
